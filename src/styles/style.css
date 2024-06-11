@@ -307,4 +307,53 @@ template {
   display: none;
 }
 
+html, body {
+  font-size: 16px;
+}
+
+body {
+  padding-top: 10px;
+}
+
+.show-code {
+  max-width: 37.5rem;
+  border: 0.0625rem solid darkgray;
+  border-radius: 0.25rem;
+  margin: auto auto 0.625rem;
+  position: relative;
+}
+.show-code__visualization {
+  padding: 0.625rem;
+  border-bottom: 0.0625rem solid darkgray;
+}
+.show-code__btn {
+  display: block;
+  background: white;
+  border: 0.1875rem solid green;
+  border-radius: 1.625rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: green;
+  padding: 0.3125rem 0.9375rem;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all 0.4s;
+  position: absolute;
+  left: 50%;
+}
+.show-code__btn:hover {
+  color: white;
+  background: green;
+}
+.show-code__code {
+  background: lightcyan;
+  margin: 0;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  padding: 1.5rem 0.625rem 0.625rem;
+}
+.show-code__code--hidden {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
