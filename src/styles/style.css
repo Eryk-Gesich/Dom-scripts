@@ -319,7 +319,7 @@ body {
   max-width: 37.5rem;
   border: 0.0625rem solid darkgray;
   border-radius: 0.25rem;
-  margin: auto auto 0.625rem;
+  margin: auto auto 1.625rem;
   position: relative;
 }
 .show-code__visualization {
@@ -340,6 +340,7 @@ body {
   transition: all 0.4s;
   position: absolute;
   left: 50%;
+  z-index: 42;
 }
 .show-code__btn:hover {
   color: white;
@@ -351,9 +352,14 @@ body {
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
   padding: 1.5rem 0.625rem 0.625rem;
+  transition: all 800ms;
 }
 .show-code__code--hidden {
-  display: none;
+  opacity: 0;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
